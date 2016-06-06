@@ -27,7 +27,7 @@ public class MybatisConfig {
 		final DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
 
 		driverManagerDataSource.setDriverClassName("org.postgresql.Driver");
-		driverManagerDataSource.setUrl("jdbc:postgresql://localhost:5432/");
+		driverManagerDataSource.setUrl("jdbc:postgresql://localhost:5432/employees");
 		driverManagerDataSource.setUsername("postgres");
 		driverManagerDataSource.setPassword("password");
 
