@@ -8,6 +8,6 @@ WORKDIR /usr/src/app
 
 ADD . /usr/src/app
 
-RUN mvn install
+RUN mvn package
 
 CMD java -jar target/employees-0.0.1-SNAPSHOT.jar
