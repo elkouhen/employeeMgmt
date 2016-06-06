@@ -8,6 +8,6 @@ WORKDIR /usr/src/app
 
 ADD . /usr/src/app
 
-RUN mvn package
+RUN mvn install
 
-CMD mvn spring-boot:run
+CMD java -jar target/employees-0.0.1-SNAPSHOT.jar
