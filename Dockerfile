@@ -10,4 +10,4 @@ ADD . /usr/src/app
 
 RUN mvn package
 
-CMD java -jar target/employees-0.0.1-SNAPSHOT.jar
+CMD java -jar target/employees-0.0.1-SNAPSHOT.jar com.softeam.employees.EmployeesApplication
