@@ -1,7 +1,7 @@
 version: '2'
 services:
   employees-app:
-    build: app
+    image: registry.ng.bluemix.net/employeemgmt/employeemgmt-app
     ports:
      - "8080:8080"
     depends_on:
@@ -11,7 +11,7 @@ services:
     environment:
       POSTGRESQL_94_RHEL7_SERVICE_HOST: postgres
   employees-postgres:
-    image: postgres
+    image: registry.ng.bluemix.net/employeemgmt/postgres 
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
